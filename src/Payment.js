@@ -110,7 +110,7 @@ function Payment() {
             {basket.map((product) => (
               <CheckoutProduct
                 title={product.name}
-                image={product.image}
+                image={product.img}
                 price={product.price}
               />
             ))}

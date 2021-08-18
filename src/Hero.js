@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
+import * as Scroll from "react-scroll";
 import {
   HeroContainer,
   HeroContent,
@@ -25,7 +26,7 @@ const Hero = () => {
         <HeroItems>
           <HeroH1>South Africa's Hottest Oven</HeroH1>
           <HeroP>Open 24 Hrs. Best Pizzeria</HeroP>
-          <HeroBtn>Place Order</HeroBtn>
+          <HeroBtn to="products">Place Order</HeroBtn>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
