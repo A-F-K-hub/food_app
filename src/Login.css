@@ -1,4 +1,8 @@
 .login_container {
+  margin-top: 10rem;
+  margin-left: 35rem;
+  background-color: whitesmoke;
+  align-items: center;
   width: 300px;
   height: fit-content;
   display: flex;
@@ -9,11 +13,13 @@
 }
 
 .login_container > h1 {
+  background-color: whitesmoke;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 .login_container > form > h5 {
+  background-color: whitesmoke;
   margin-bottom: 5px;
 }
 
@@ -30,13 +36,21 @@
 }
 
 .login_signInButton {
-  background: #f0c14b;
   border-radius: 2px;
   width: 100%;
   height: 30px;
   border: 1px solid;
   margin-top: 10px;
-  border-color: #a88734 #9c7e31 #846a29;
+  background: #e31837;
+  color: #fff;
+  transition: 0.2 ease-out;
+}
+
+.login_signInButton:hover {
+  background: #ffc500;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  color: #000;
 }
 
 .login_registerButton {
@@ -46,4 +60,11 @@
   border: 1px solid;
   margin-top: 10px;
   border-color: darkgray;
+}
+
+.login_registerButton:hover {
+  background: #ffc500;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+  color: #000;
 }
