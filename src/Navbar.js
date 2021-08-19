@@ -17,7 +17,7 @@ function Navbar({ toggle }) {
 
   const handleAuthentication = () => {
     if (user) {
-      auth.signout();
+      auth.signOut();
     }
   };
   return (
@@ -26,7 +26,9 @@ function Navbar({ toggle }) {
         <NavLink to="/">Pizza</NavLink>
         <NavLink to={!user && "/login"}>
           <Header1>Hello {!user ? "Guest" : user.email}</Header1>
-          <Header2>{user ? "Sign Out" : "Sign In"}</Header2>
+          <Header2 onClick={handleAuthentication}>
+            {user ? "Sign Out" : "Sign In"}
+          </Header2>
         </NavLink>
         <NavLink to="/checkout">
           <ShoppingBasket />
